@@ -1,0 +1,16 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+class jdbc {
+    public static main ( String args []) {
+        DriverManager.registerDriver(driver obj);
+        DriverManager.registerDriver(new com.mysql.jdbc.Driver())
+
+        DriverManager.getConnection('jdbc:mysql://localhost:3306/','root','pass');
+
+       result =  Statement stmnt=con.createStatement("select * from time_zone ");
+       system.out.println(result);
+       con.close();
+    }
+}
